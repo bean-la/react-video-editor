@@ -38,7 +38,7 @@ export function drawVerticalLeftIcon(
   ctx: CanvasRenderingContext2D,
   left: number,
   top: number,
-  styleOverride: any,
+  // styleOverride: any,
   fabricObject: FabricObject,
 ) {
   const width = 12; // Rectangle width
@@ -93,7 +93,7 @@ export function drawVerticalRightIcon(
   ctx: CanvasRenderingContext2D,
   left: number,
   top: number,
-  styleOverride: any,
+  // styleOverride: any,
   fabricObject: FabricObject,
 ) {
   const width = 12; // Rectangle width

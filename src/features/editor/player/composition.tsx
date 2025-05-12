@@ -19,7 +19,6 @@ const Composition = () => {
     fps,
     trackItemDetailsMap,
     sceneMoveableRef,
-    size,
     transitionsMap,
   } = useStore();
   const mergedTrackItemsDeatilsMap = merge(trackItemsMap, trackItemDetailsMap);
@@ -143,7 +142,7 @@ const Composition = () => {
 
   return (
     <>
-      {groupedItems.map((group, index) => {
+      {groupedItems.map((group) => {
         if (group.length === 1) {
           const item = mergedTrackItemsDeatilsMap[group[0].id];
           return SequenceItem[item.type](item, {

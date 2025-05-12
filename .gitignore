@@ -1,3 +1,6 @@
+.env
+*.tsbuildinfo
+
 # Logs
 logs
 *.log

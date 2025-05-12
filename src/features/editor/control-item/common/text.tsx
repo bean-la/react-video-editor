@@ -4,11 +4,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import { ScrollArea } from "@/components/ui/scroll-area";
-import useDataState from "../../store/use-data-state";
-import { dispatch } from "@designcombo/events";
-import { EDIT_OBJECT } from "@designcombo/state";
-import { ChevronDown, Search, Strikethrough, Underline, X } from "lucide-react";
+import { ChevronDown, Strikethrough, Underline, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import Opacity from "./opacity";
 import { Input } from "@/components/ui/input";
@@ -19,6 +15,8 @@ import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { ICompactFont, IFont } from "../../interfaces/editor";
 import Draggable from "react-draggable";
 import useLayoutStore from "../../store/use-layout-store";
+import { dispatch } from "@designcombo/events";
+import { EDIT_OBJECT } from "@designcombo/state";
 
 interface TextControlsProps {
   trackItem: ITrackItem & any;
@@ -116,7 +114,7 @@ const FontBackground = ({
                 variant="secondary"
                 className="pointer-events-none h-8 pl-10"
                 value={localValue}
-                onChange={() => {}}
+                onChange={() => { }}
               />
             </div>
           </PopoverTrigger>
@@ -182,7 +180,7 @@ const FontColor = ({
                 variant="secondary"
                 className="pointer-events-none h-8 pl-10"
                 value={localValue}
-                onChange={() => {}}
+                onChange={() => { }}
               />
             </div>
           </PopoverTrigger>
@@ -275,7 +273,7 @@ const FontSize = ({
 };
 
 const FontFamily = ({
-  handleChangeFont,
+  // handleChangeFont,
   fontFamilyDisplay,
 }: {
   handleChangeFont: (font: ICompactFont) => void;

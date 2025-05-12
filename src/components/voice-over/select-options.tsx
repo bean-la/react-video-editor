@@ -415,7 +415,7 @@ export function SliderOptions({ className, ...props }: SliderProps) {
 }
 
 function ModelSliderOptions({
-  className,
+  // className,
   title,
   from,
   to,
@@ -423,10 +423,10 @@ function ModelSliderOptions({
   max = 100,
   newValue = 0,
   type,
-  isSliding,
+  // isSliding,
   setIsSliding,
   handleChange,
-  ...props
+
 }: ModelSliderOptionsProps & {
   isSliding: boolean;
   setIsSliding: (sliding: boolean) => void;

@@ -44,7 +44,7 @@ export default function Navbar({
     dispatch(HISTORY_REDO);
   };
 
-  const handleCreateProject = async () => {};
+  const handleCreateProject = async () => { };
 
   // Create a debounced function for setting the project name
   const debouncedSetProjectName = useCallback(
@@ -273,7 +273,7 @@ const RESIZE_OPTIONS: ResizeOptionProps[] = [
   },
 ];
 
-const ResizeVideo = () => {
+export const ResizeVideo = () => {
   const handleResize = (options: ResizeValue) => {
     dispatch(DESIGN_RESIZE, {
       payload: {
