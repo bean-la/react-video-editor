@@ -14,17 +14,17 @@ export default defineConfig(({ mode }) => {
         "@": path.resolve(__dirname, "./src"),
       },
     },
-    ...(!!env.VITE_BUILD_LIB && {
-      build: {
-        lib: {
-          entry: {
-            'app': path.resolve(__dirname, "./src/app.tsx"),
-          },
-          name: "app",
+
+    build: {
+      lib: {
+        entry: {
+          'app': path.resolve(__dirname, "./src/app.tsx"),
         },
-        sourcemap: true,
-        emptyOutDir: true,
+        name: "app",
       },
-    }),
+      sourcemap: true,
+      emptyOutDir: true,
+    },
+
   }
 });
